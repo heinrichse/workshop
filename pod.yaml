@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: basic-app
+spec:
+  containers:
+  - name: app
+    image: centos
+    volumeMounts:
+    - name: temp
+      mountPath: /data
+  volumes:
+  - name: temp
+
